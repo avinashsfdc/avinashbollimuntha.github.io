@@ -5,82 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avinash Bollimuntha | Salesforce Developer & Administrator</title>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<body>
+    <div class="container">
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #0a0e27;
-            min-height: 100vh;
-            position: relative;
-            color: #1a1d29;
-            -webkit-font-smoothing: antialiased;
-        }
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Avinash Bollimuntha</h1>
+            <div class="role">Salesforce Developer & Administrator</div>
+            <span class="badge">Seeking Full‑Time & C2C Opportunities</span>
+        </header>
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background:
-                radial-gradient(ellipse at top left, rgba(186,148,103,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at bottom right, rgba(134,111,168,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at center, rgba(186,148,103,0.08) 0%, transparent 60%),
-                linear-gradient(135deg, #0a0e27 0%, #1a1d29 50%, #2d1b3d 100%);
-            z-index: 0;
-        }
+        <!-- MAIN GRID -->
+        <div class="main-grid">
 
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ba9467' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.4;
-            z-index: 0;
-            pointer-events: none;
-        }
+            <!-- PERSONAL & PROFESSIONAL -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">👤</span>
+                    <h2 class="card-title">Personal & Professional</h2>
+                </div>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 30px;
-            position: relative;
-            z-index: 1;
-        }
+                <table>
+                    <tr><td>Full Name (Visa)</td><td>Avinash Bollimuntha</td></tr>
+                    <tr><td>Location</td><td>Maryland Heights, MO</td></tr>
+                    <tr><td>Relocation</td><td class="highlight">Open</td></tr>
+                    <tr><td>Date of Birth</td><td>May 20, 1998</td></tr>
+                    <tr><td>Last 4 SSN</td><td>0000</td></tr>
+                    <tr><td>Primary Skill</td><td class="highlight">Salesforce Developer & Admin</td></tr>
+                    <tr><td>Experience</td><td class="highlight">6+ Years</td></tr>
+                    <tr><td>Interviews</td><td class="highlight">Anytime</td></tr>
+                </table>
+            </div>
 
-        .header {
-            background: rgba(255,255,255,0.98);
-            backdrop-filter: blur(20px);
-            border-radius: 16px;
-            padding: 45px 50px;
-            margin-bottom: 28px;
-            text-align: center;
-            border: 1px solid rgba(186,148,103,0.1);
-            box-shadow: 0 8px 32px rgba(10,14,39,0.3);
-        }
+            <!-- IMMIGRATION -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">🛂</span>
+                    <h2 class="card-title">Immigration Status</h2>
+                </div>
 
-        .header h1 {
-            font-family: 'Spectral', serif;
-            font-size: 3.25rem;
-            font-weight: 600;
-            color: #1a1d29;
-            margin-bottom: 10px;
-            letter-spacing: -0.03em;
-        }
+                <table>
+                    <tr><td>Visa Status</td><td class="highlight">F1 STEM OPT</td></tr>
+                    <tr><td>STEM OPT Valid Until</td><td>2026</td></tr>
+                    <tr><td>Eligible for H1B?</td><td class="highlight">Yes</td></tr>
+                    <tr><td>Year Entered US</td><td>2022</td></tr>
+                    <tr><td>Passport Number</td><td>XXXXXXXX</td></tr>
+                </table>
+            </div>
 
-        .header .role {
-            font-size: 1.125rem;
-            color: #ba9467;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            margin-bottom: 16px;
-        }
+            <!-- EDUCATION -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">🎓</span>
+                    <h2 class="card-title">Education</h2>
+                </div>
 
-        .badge {
-            display: inline-block;
-            padding: 9px 22px;
-            background: linear-gradient(135deg, #ba9467 0%, #866fa8 100%);
-            color: #ffffff;
-            border
+                <table>
+                    <tr><td>Degree</td><td>Master of Science</td></tr>
+                    <tr><td>Specialization</td><td>Computer Science</td></tr>
+                    <tr><td>University</td><td>Southeast Missouri State University</td></tr>
+                    <tr><td>Year</td><td>2024</td></tr>
+                </table>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">📞</span>
+                    <h2 class="card-title">Quick Contact</h2>
+                </div>
+
+                <table>
+                    <tr><td>Phone</td><td>314‑299‑4138</td></tr>
+                    <tr><td>Email</td><td>avinashb200598@gmail.com</td></tr>
+                    <tr><td>LinkedIn</td><td>linkedin.com/in/avinashb1998</td></tr>
+                    <tr><td>GitHub</td><td>avinashbollimuntha.github.io</td></tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- DOCUMENTS -->
+        <div class="docs-section">
+            <div class="docs-header">
+                <span class="docs-icon">📁</span>
+                <h2 class="docs-title">Documents & Resources</h2>
+            </div>
+
+            <div class="docs-grid">
+                <a href="Avinash_Resume.pdf" target="_blank" class="doc-btn">
+                    <span>📄</span><span>Resume</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/avinashb1998/" target="_blank" class="doc-btn">
+                    <span>💼</span><span>LinkedIn</span>
+                </a>
+
+                <a href="https://avinashbollimuntha.github.io" target="_blank" class="doc-btn">
+                    <span>🐙</span><span>GitHub</span>
+                </a>
+
+                <a href="https://www.salesforce.com/trailblazer/avinashb1998" target="_blank" class="doc-btn">
+                    <span>🌟</span><span>Trailhead</span>
+                </a>
+
+                <a href="#" class="doc-btn">
+                    <span>🛂</span><span>Visa</span>
+                </a>
+
+                <a href="#" class="doc-btn">
+                    <span>🪪</span><span>ID</span>
+                </a>
+
+                <a href="#" class="doc-btn">
+                    <span>📋</span><span>Certifications</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CONTACT BAR -->
+        <div class="contact-bar">
+            <div class="contact-item">
+                <span>📱</span>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value"><a href="tel:3142994138">314‑299‑4138</a></div>
+            </div>
+
+            <div class="contact-item">
+                <span>✉️</span>
+                <div class="contact-label">Email</div>
+                <div class="contact-value"><a href="mailto:avinashb200598@gmail.com">avinashb200598@gmail.com</a></div>
+            </div>
+
+            <div class="contact-item">
+                <span>💼</span>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value"><a href="https://www.linkedin.com/in/avinashb1998" target="_blank">View Profile</a></div>
+            </div>
+
+            <div class="contact-item">
+                <span>💬</span>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">avinashbollimuntha.github.io</div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Avinash Bollimuntha · Salesforce Developer & Administrator · 6+ Years Experience</p>
+        </footer>
+
+    </div>
+</body>
+</html>
