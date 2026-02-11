@@ -1,153 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Avinash Bollimuntha | Salesforce Developer & Administrator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Bollimuntha | Salesforce Developer & Administrator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<body>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <!-- LIGHT BLUE ACCENT BAR -->
-  <div class="accent-bar"></div>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0e27;
+            min-height: 100vh;
+            position: relative;
+            color: #1a1d29;
+            -webkit-font-smoothing: antialiased;
+        }
 
-  <!-- PROFILE SECTION -->
-  <section class="profile-section">
-    <img src="avinash.jpeg" alt="Profile Photo" class="profile-photo" />
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background:
+                radial-gradient(ellipse at top left, rgba(186,148,103,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom right, rgba(134,111,168,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at center, rgba(186,148,103,0.08) 0%, transparent 60%),
+                linear-gradient(135deg, #0a0e27 0%, #1a1d29 50%, #2d1b3d 100%);
+            z-index: 0;
+        }
 
-    <h1 class="name">Avinash Bollimuntha</h1>
-    <h2 class="title">Salesforce Developer & Administrator</h2>
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ba9467' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+            z-index: 0;
+            pointer-events: none;
+        }
 
-    <!-- SOCIAL ICON LINKS -->
-    <div class="social-links">
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            position: relative;
+            z-index: 1;
+        }
 
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/avinashb1998/" target="_blank">
-        <span class="icon">💼</span> LinkedIn
-      </a>
+        .header {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 45px 50px;
+            margin-bottom: 28px;
+            text-align: center;
+            border: 1px solid rgba(186,148,103,0.1);
+            box-shadow: 0 8px 32px rgba(10,14,39,0.3);
+        }
 
-      <!-- GitHub -->
-      <a href="https://avinashbollimuntha.github.io" target="_blank">
-        <span class="icon">🐙</span> GitHub
-      </a>
+        .header h1 {
+            font-family: 'Spectral', serif;
+            font-size: 3.25rem;
+            font-weight: 600;
+            color: #1a1d29;
+            margin-bottom: 10px;
+            letter-spacing: -0.03em;
+        }
 
-      <!-- Trailhead -->
-      <a href="https://www.salesforce.com/trailblazer/avinashb1998" target="_blank">
-        <span class="icon">🌟</span> Trailhead
-      </a>
+        .header .role {
+            font-size: 1.125rem;
+            color: #ba9467;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
 
-      <!-- Email -->
-      <a href="mailto:avinashb200598@gmail.com">
-        <span class="icon">✉️</span> Email
-      </a>
-
-      <!-- Resume -->
-      <a href="Avinash_Resume.pdf" target="_blank">
-        <span class="icon">📄</span> Resume
-      </a>
-
-      <!-- Visa (F1 STEM OPT) — ICON ONLY -->
-      <span class="visa-tag">
-        <span class="icon">🛂</span> Visa: F1 STEM OPT
-      </span>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section">
-    <h2>🧑‍💼 About Me</h2>
-    <p>
-      I am a certified Salesforce Developer and Administrator with 6+ years of experience designing, building, and optimizing enterprise Salesforce platforms across Sales Cloud, Service Cloud, and Experience Cloud.
-    </p>
-    <p>
-      I specialize in Apex, Lightning Web Components, declarative automation, and secure platform administration. I bring a strong DevOps mindset using Salesforce DX, Git, Jenkins, and CI/CD pipelines to deliver reliable, high‑quality releases.
-    </p>
-    <p>
-      My approach blends technical depth with business understanding—translating requirements into scalable solutions, improving processes, and enabling teams to work smarter.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section">
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Apex, Lightning Web Components, Visualforce</li>
-      <li>SOQL, SOSL, JavaScript, HTML, CSS</li>
-      <li>Flows, Validation Rules, Automation</li>
-      <li>REST/SOAP APIs, OAuth, SAML</li>
-      <li>MuleSoft, Informatica Cloud, Talend</li>
-      <li>Salesforce DX, Git, Jenkins, CI/CD</li>
-      <li>Reports, Dashboards, Tableau CRM</li>
-      <li>Sales Cloud, Service Cloud, Experience Cloud</li>
-    </ul>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section">
-    <h2>💼 Experience</h2>
-
-    <div class="experience-item">
-      <h3>Emerson Electric Co — Salesforce Admin/Developer</h3>
-      <p class="date">Sep 2024 – Present · St Louis, MO</p>
-      <ul>
-        <li>Manage Salesforce administration for Sales & Service Cloud.</li>
-        <li>Lead CI/CD pipelines using GitHub, Bitbucket, SFDX, Jenkins.</li>
-        <li>Replaced legacy workflows with modern Flows.</li>
-        <li>Built dashboards for manufacturing and leadership teams.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>BJC HealthCare — Salesforce Admin/Developer</h3>
-      <p class="date">Jun 2023 – Aug 2024 · St Louis, MO</p>
-      <ul>
-        <li>Administered Sales & Service Cloud with scalable automation.</li>
-        <li>Managed CI/CD pipelines for multi‑sandbox deployments.</li>
-        <li>Built Flows and validation rules for healthcare operations.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>Tata Consultancy Services (OMSA)</h3>
-      <p class="date">Dec 2021 – May 2023 · Kolkata, India</p>
-      <ul>
-        <li>Configured Sales & Service Cloud for insurance workflows.</li>
-        <li>Integrated AWS Lambda and REST services with Salesforce.</li>
-        <li>Managed deployments using SFDX, Git, Jenkins.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>Standard Chartered — Salesforce Administrator</h3>
-      <p class="date">Jun 2019 – Nov 2021 · Bangalore, India</p>
-      <ul>
-        <li>Managed global Salesforce administration for banking operations.</li>
-        <li>Built automation for lead and case management.</li>
-        <li>Performed data cleansing and migrations.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section">
-    <h2>🎓 Certifications</h2>
-    <ul>
-      <li>Salesforce Certified Administrator</li>
-      <li>Salesforce Certified Platform Developer I</li>
-      <li>Salesforce Certified Platform App Builder</li>
-      <li>Salesforce Certified Industries CPQ Developer</li>
-      <li>Salesforce Certified Agentforce Specialist</li>
-    </ul>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section">
-    <h2>✉️ Contact</h2>
-    <p><strong>Phone:</strong> 314‑299‑4138</p>
-    <p><strong>Email:</strong> <a href="mailto:avinashb200598@gmail.com">avinashb200598@gmail.com</a></p>
-  </section>
-
-</body>
-</html>
+        .badge {
+            display: inline-block;
+            padding: 9px 22px;
+            background: linear-gradient(135deg, #ba9467 0%, #866fa8 100%);
+            color: #ffffff;
+            border
